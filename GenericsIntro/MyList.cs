@@ -4,32 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenericsIntro
+namespace GenericsIntro                                 // özel bir tipte çalışacağını belirtir
 {
-    class MyList<T>
+    class MyList<T>                                     //string int sepet classı her şeyi koyabiliriz   type ın T si
     {
-        T[] items;
-        //constructor
+        T[] items;                                      // string[] items;  yerine T koyarız 
+                                                        // constructor                        ******ctor tab tab******
         public MyList()
         {
             items = new T[0];
         }
-        public void Add(T item)// yeni isim eklediğimizde bir arttırdığımızda ilk değer uçar o yüzden alta bak şimdi.
-        {                                                                            
-            T[] tempArray = items;// temparray geçici dizi  ilk referansı tutar      |
-            items = new T[items.Length+1];// string listesini 1 tane daha arttırdık. |
+        public void Add(T item)                         // eleman da yazabilirsin  
+        {
+            T[] tempArray = items;                      // geçici dizinin referansı items in referansı arkadaşa  emanet etti eleman sayısı arttırmadan önce geçici referans tuttur
+            items = new T[items.Length+1];              // dizinin eleman sayısı 
+
             for (int i = 0; i < tempArray.Length; i++)
             {
-                items[i] = tempArray[i];// daha önceki tempArrayın tuttuğu verileri items a veriyorsun.
+                items[i] = tempArray[i];
             }
-
             items[items.Length - 1] = item;
-
-
-
-
-
-
         }
     }
 }

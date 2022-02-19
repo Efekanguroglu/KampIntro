@@ -12,20 +12,30 @@ namespace OOP1
             product1.ProductName = "Masa";
             product1.UnitPrice = 500;
             product1.UnitInStock = 3;
-            // yada alttaki gibi yapabilirsin
-            Product product2 = new Product { Id = 2,CategoryId=4,
-                UnitInStock=5,UnitPrice=35,ProductName="Kalem" };
-            //PascalCase //camelCase
+
+            Product product2 = new Product {Id=2, CategoryId=5, UnitInStock=5, ProductName="Kalem ", UnitPrice=35};
+            //Pascal Case ilk harfler büyük   //camelCase  ilk küçük 2. büyük
             //case sensitive
             ProductManager productManager = new ProductManager();
             productManager.Add(product1);
             Console.WriteLine(product1.ProductName);
 
-            productManager.Topla2(3, 6);
 
-            int toplamSonucu = productManager.Topla(3, 6);
-            Console.WriteLine(toplamSonucu);
-            
+
+
+
+
+
+
+
+
+
+            //productManager.Topla(3, 5);
+            //int toplamaSonucu = productManager.Topla(3, 5);
+            //Console.WriteLine(toplamaSonucu*2);
+
+          
+
         }
     }
 }

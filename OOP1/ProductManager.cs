@@ -12,30 +12,26 @@ namespace OOP1
         //ref out 
 
     {
-        public void Add(Product product)
+       public void Add(Product product)
         {
-            Console.WriteLine(product.ProductName + " eklendi.");
+            Console.WriteLine(product.ProductName +"Eklendi.");
         }
-        //public void update(product product)
-        //{
-        //    console.writeline(product.productname + " güncellendi");
-        //}
-        //public int topla(int sayi1, int sayi2)
-        //{
-        //    return sayi1 + sayi2;
-        //}
-        //public void topla2(int sayi1, int sayi2)// neden int değil
-        //{
-        //    console.writeline(sayi1 + sayi2);// void git yap bitir sonra işin olmaz
-        //}
-        //public int topla(int sayi1, int sayi2)
-        //{
-        //    return sayi1 + sayi2;
-        //}
-        //public void topla2(int sayi1, int sayi2)// neden int değil
-        //{
-        //    console.writeline(sayi1 + sayi2);// void git yap bitir sonra işin olmaz
-        //}
+        public void Update(Product product)
+        {
+            Console.WriteLine(product.ProductName +"Güncellendi.");
+        }
 
+
+
+
+
+        // public int Topla(int sayi1, int sayi2)
+        // {
+        //    return sayi1 + sayi2;
+        // }
+        //public void Topla2(int sayi1, int sayi2)// void git yap bitir!!!  return koyarsan cevabı alır ve işlem devam eder.
+        //{
+        //    Console.WriteLine(sayi1 +sayi2);
+        
     }
 }
