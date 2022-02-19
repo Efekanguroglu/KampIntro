@@ -14,6 +14,9 @@ namespace GenericsIntro                                 // özel bir tipte çal�
         {
             items = new T[0];
         }
+
+        
+
         public void Add(T item)                         // eleman da yazabilirsin  
         {
             T[] tempArray = items;                      // geçici dizinin referansı items in referansı arkadaşa  emanet etti eleman sayısı arttırmadan önce geçici referans tuttur
@@ -23,7 +26,13 @@ namespace GenericsIntro                                 // özel bir tipte çal�
             {
                 items[i] = tempArray[i];
             }
-            items[items.Length- 1] = item;
+            items[items.Length - 1] = item;
         }
+         public int Length
+         {
+            get { return items.Length; }
+         }
+
+
     }
 }

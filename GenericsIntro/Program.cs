@@ -9,8 +9,10 @@ namespace GenericsIntro
             
             MyList<string> isimler = new MyList<string>();// MyLİst isimler = new Mylist(); yazdık ilk başta class türünü göstermemiz gerek
             isimler.Add("Efekan");
+            Console.WriteLine(isimler.Length);
 
-           
+            isimler.Add("Ekni");
+            Console.WriteLine(isimler.Length);
 
         }
     }
