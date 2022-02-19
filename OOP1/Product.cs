@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOP1
 {
-    class Product// CRUD= CREATE, READ, UPDATE,DELETE 
+    class Product
+        // CRUD= CREATE, READ, UPDATE,DELETE 
     {
         public int Id { get; set; }
         public int  CategoryId { get; set; }
