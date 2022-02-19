@@ -23,7 +23,7 @@ namespace GenericsIntro                                 // özel bir tipte çal�
             {
                 items[i] = tempArray[i];
             }
-            items[items.Length - 1] = item;
+            items[items.Length- 1] = item;
         }
     }
 }
