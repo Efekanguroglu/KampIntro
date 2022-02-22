@@ -28,10 +28,10 @@ namespace ReferenceTypes
             Yönetici yönetici = new Yönetici();
             yönetici.Ad ="Efe";
             Kisi kisi3 = musteri; // miras aldığımız kisiye değer atayabiliriz ama yeni bir işi olması gerekiyor değer 
-            Console.WriteLine(kisi3.Ad);    //   kisi3. yazınca yönetici no gözükmüyor
+            Console.WriteLine(kisi3.);    //   kisi3. yazınca CreditCardNumber gözükmüyor
 
 
-            Console.WriteLine(((Musteri)kisi3).CreditCardNumber );
+            
 
 
             PersonManager personManager = new PersonManager();
