@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Classİntro
+namespace ClassIntro
 {
     class Program
     {

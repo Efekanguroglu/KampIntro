@@ -25,13 +25,18 @@ namespace ReferenceTypes
 
             Musteri musteri = new Musteri();
             musteri.Ad = "Ekin";
+            musteri.CreditCardNumber = "0123456798";
             Yönetici yönetici = new Yönetici();
             yönetici.Ad ="Efe";
-            Kisi kisi3 = musteri; // miras aldığımız kisiye değer atayabiliriz ama yeni bir işi olması gerekiyor değer 
-            Console.WriteLine(kisi3.);    //   kisi3. yazınca CreditCardNumber gözükmüyor
+            Musteri kisi3 = musteri; // miras aldığımız kisiye değer atayabiliriz ama yeni bir işi olması gerekiyor değer 
+            //Console.WriteLine(kisi3.);    //   kisi3. yazınca CreditCardNumber gözükmüyor
+            Console.WriteLine(kisi3.CreditCardNumber);
+            // Kisi kisi3= musteri;
+            //Console.WriteLine(((musterikisi3).);
 
 
             
+
 
 
             PersonManager personManager = new PersonManager();
