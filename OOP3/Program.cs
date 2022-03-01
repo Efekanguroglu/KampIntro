@@ -12,12 +12,16 @@ namespace OOP3
             IKrediManager konutKrediManager = new KonutKrediManager();
 
 
+            ILoggerService dataBaseLoggerService = new DataBaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+
+
             BasvuruManager basvuruManager = new BasvuruManager();
-           // basvuruManager.BasvuruYap(konutKrediManager);     // ne yazarsak o çalışır
+            basvuruManager.BasvuruYap(tasıtKrediManager, dataBaseLoggerService);      // new EsnafKrediManager diyerek de üstte  instance da oluşturabilirsin
 
             List<IKrediManager> krediler = new List<IKrediManager>(){ tasıtKrediManager, konutKrediManager }; // <----buraya ne eklersek o çalışır
 
-            basvuruManager.KrediOnBilgilendirmesiYap(krediler);
+            //basvuruManager.KrediOnBilgilendirmesiYap(krediler); // intarfaceleri birbirlerinin alternatifleri olan ama kod içerikleri farklı olan kodlar için kullanırız.
         }
     }
 } 
